@@ -77,15 +77,15 @@ function videoDetails(video, callback,errorCallback){
             console.log("title: ", title);
         },
 
-        (disError)=>displayError(disError)
+        (Error)=>displayError(Error)
         
         )
 
         },
-        (disError)=>displayError(disError)
+        (Error)=>displayError(Error)
         ) 
         },
-        (disError)=>displayError(disError)
+        (Error)=>displayError(Error)
     
         );
 

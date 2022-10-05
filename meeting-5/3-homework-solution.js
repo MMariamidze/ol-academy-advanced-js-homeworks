@@ -77,12 +77,15 @@ function videoDetails(video){
     const getPassedUsersFirstVideoTitle = (user) =>{
 
     loginUser(user,1234)
-       .then((user)=>getUserVideos(user.userEmail))
+       .then((user)=>console.log("user: ",user))
+       .then((videos)=>getUserVideos(videos.Email))
        .then((videos)=>videoDetails(videos[0]))
        .then((title)=>console.log(title))
-       .catch((disErorr)=>displayError(disErorr))
+       .catch((Erorr)=>displayError(Erorr))
 
     }
+
+    getPassedUsersFirstVideoTitle("user2@hw.js");
     
         
 console.log("Finish");

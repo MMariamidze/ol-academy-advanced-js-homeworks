@@ -31,7 +31,9 @@ function videoDetails(video, callback){
 
 const getPassedUsersFirstVideoTitle = (user) =>
 
-    loginUser(user,1234, (user)=>{
+    loginUser(user,1234, 
+        
+        (user)=>{
 
         console.log("user: ",user);
 
