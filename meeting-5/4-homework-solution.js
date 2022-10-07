@@ -77,8 +77,9 @@ function videoDetails(video){
     const getPassedUsersFirstVideoTitle = async (user) =>{
 
     try{
-        let passedUser = await loginUser(user,1234)             
-        let videos = await getUserVideos(passedUser.userEmail)
+        let passedUser = await loginUser(user,1234)      
+        console.log("user: ",user)      
+        let videos = await  getUserVideos(passedUser.userEmail)
         let title = await videoDetails(videos[0])
         console.log(title)
 
@@ -92,5 +93,5 @@ function videoDetails(video){
 
 }
     
-getPassedUsersFirstVideoTitle("user3@hw.js");
+getPassedUsersFirstVideoTitle("user2@hw.js");
 console.log("Finish");
